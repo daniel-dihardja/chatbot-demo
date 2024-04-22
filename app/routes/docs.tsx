@@ -45,34 +45,86 @@ export default function DataDocs() {
   return (
     <>
       <Header />
-      <div className="container mx-auto p-4 mt-4">
-        <h1 className="text-2xl mb-4">
-          Demonstration of a Document-Based Chatbot with Fictional Data
+      <div className="container px-4 md:px-72 mx-auto mt-4">
+        <h1 className="text-2xl mb-4 text">
+          <strong>From Static to Dynamic: Extending FAQs with Chatbots</strong>
+          {/* Demonstration of a Document-Based Chatbot with Fictional Data */}
         </h1>
         <p className="text-lg mb-4">
-          This demonstration features a chatbot that uses data from a document
-          as its source. The data provided in the document is fictional to
-          ensure it does not appear in the GPT training data. The bot is
-          explicitly instructed to answer questions using only the information
-          from the document. If the required information is missing in the
-          document, the AI will indicate its lack of knowledge instead of
-          fabricating an answer.
+          This demonstration showcases how chatbots are revolutionizing
+          business-customer interactions by extending traditional static FAQ
+          pages into dynamic, conversational experiences. Chatbots enhance the
+          utility of FAQs by providing real-time, interactive responses, making
+          information retrieval more engaging and efficient.
         </p>
-        <p>
+        <p className="text-lg mb-12">
+          In this example, we use fictional data to ensure it is not present in
+          the GPT training dataset. The data is loaded from a text file. The bot
+          is specifically programmed to use only this data; if additional
+          information is required, it will direct users to the general inquiry
+          email address.
+        </p>
+        {/* <p>
           You can start interacting with the chatbot by clicking the button
           located in the bottom right corner of the page.
+        </p> */}
+
+        <div
+          className="p-4 border border-black rounded-lg mb-12"
+          style={{ height: "80rem" }}
+        >
+          <textarea
+            className="w-full h-full p-4 text-gray-900 text-sm"
+            value={txt}
+            disabled={true}
+          ></textarea>
+        </div>
+
+        <h2 className="text-xl mb-6">
+          <strong>Step-by-Step Breakdown</strong>
+        </h2>
+
+        <p className="text-lg mb-12">
+          This chatbot is developed using the Flowise framework (link to
+          Flowise). Initially, the content from the text file is loaded and
+          splitted into chunks. These chunks are then converted into vectors and
+          stored in the database
         </p>
-        <Card className="mt-6 w-full">
-          <CardBody>
-            <small>
-              <textarea
-                className="w-full h-60 p-4 border border-gray-500 text-gray-900 text-sm mb-12"
-                value={txt}
-                disabled={true}
-              ></textarea>
-            </small>
-          </CardBody>
-        </Card>
+
+        <h2 className="text-xl mb-6">
+          <strong>Conclusion</strong>
+        </h2>
+        <p className="text-lg mb-6">
+          Adding a chatbot to the traditional FAQ setup offers numerous benefits
+          for customers, enhancing their overall experience in several key ways:
+        </p>
+
+        <p className="text-lg mb-6">
+          <strong>Instant Responses</strong>: Chatbots provide immediate answers
+          to customer queries, reducing wait times and improving satisfaction.
+          Unlike FAQs that require users to search for information,
+        </p>
+
+        <p className="text-lg mb-6">
+          <strong>24/7 Availability</strong>: Chatbots are available around the
+          clock, offering consistent support even when human representatives are
+          not. This ensures that help is always at hand, regardless of the time
+          or day.
+        </p>
+
+        <p className="text-lg mb-6">
+          <strong>Personalized Assistance</strong>: Chatbots can tailor their
+          responses based on the context of the customer’s needs and previous
+          interactions. This personalization makes the support experience more
+          relevant and effective.
+        </p>
+
+        <p className="text-lg mb-6">
+          <strong>Ease of Use:</strong> For many users, interacting with a
+          chatbot can be easier and more intuitive than navigating through a
+          list of FAQs. Chatbots can guide users through complex issues with
+          step-by-step assistance that adapts to the flow of the conversation.
+        </p>
 
         <BubbleChat
           chatflowid="0595a837-39da-4f7c-8259-ef2172309c8c"

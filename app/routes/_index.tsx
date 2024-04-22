@@ -8,5 +8,9 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  return <h1>Chatbot Demo</h1>;
+  return (
+    <div>
+      <h1>Chatbot Demo</h1>
+    </div>
+  );
 }
