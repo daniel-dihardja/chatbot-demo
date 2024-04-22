@@ -1,8 +1,20 @@
 import pkg from "@material-tailwind/react";
 import { BubbleChat } from "flowise-embed-react";
+import { useState } from "react";
 import { Header } from "~/components/Header";
 
-const { Card, CardBody, CardFooter, CardHeader, Typography } = pkg;
+const {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Typography,
+  Dialog,
+  DialogHeader,
+  DialogBody,
+  DialogFooter,
+} = pkg;
 
 const txt = `Eldoria Castle - Comprehensive Information Guide
 Overview of Eldoria Castle
@@ -42,16 +54,19 @@ Phone: +123 4567 890
 `;
 
 export default function DataDocs() {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(!open);
   return (
     <>
       <Header />
       <div className="container px-4 md:px-72 mx-auto mt-12">
         <h1 className="text-2xl mb-4">
-          <strong>From Static to Dynamic: Extending FAQs with Chatbots</strong>
+          <strong>Extending FAQs with Chatbots</strong>
           {/* Demonstration of a Document-Based Chatbot with Fictional Data */}
         </h1>
         <p className="text-lg mb-6">
-          This demonstration showcases how chatbots are revolutionizing
+          This demonstration showcases how chatbots are transforming
           business-customer interactions by extending FAQ pages into dynamic,
           conversational experiences. Chatbots enhance the utility of FAQs by
           providing real-time, interactive responses, making information
@@ -65,8 +80,9 @@ export default function DataDocs() {
           email address.
         </p>
         <p className="text-lg mb-12">
-          You can start interacting with the chatbot by clicking the button
-          located in the bottom right corner of the page.
+          You can begin interacting with the chatbot by clicking the button
+          located in the bottom right corner of the page. Feel free to ask
+          questions related to the document provided below.
         </p>
 
         <div
@@ -111,9 +127,43 @@ export default function DataDocs() {
           most relevant answers or information to the user’s question.
         </p>
 
-        <p className="text-lg mb-12">
+        <p className="text-lg mb-6">
           Finally, the selected information is formatted and delivered to the
           user as an answer or response through the chat interface.
+        </p>
+
+        <p className="text-lg mb-6">
+          Here is the FlowiseAI configuration for the chatbot showcased in this
+          example:
+        </p>
+
+        <p
+          className="mb-6 flex flex-col align-middle cursor-pointer"
+          onClick={() => {
+            handleOpen();
+          }}
+        >
+          <img src="./flow.png"></img>
+          <small>Click to emlarge</small>
+        </p>
+
+        <h2 className="text-xl mb-6">
+          <strong>Integration</strong>
+        </h2>
+        <p className="text-lg mb-6">
+          To integrate a FlowiseAI-based chatbot, as demonstrated in this
+          example, into an existing website, start by hosting FlowiseAI on a
+          platform such as Hugging Face. Additionally, a database is required to
+          store the vectorized data derived from the documents. In this setup,
+          MongoDB Atlas is utilized as the database, ensuring efficient
+          management and storage of the vectorized data.
+        </p>
+
+        <p className="text-lg mb-6">
+          The chat widget can be seamlessly integrated into an existing website
+          using various methods such as HTML embedding or script embedding. For
+          React applications, the integration can be efficiently achieved using
+          the BubbleChat component.
         </p>
 
         <h2 className="text-xl mb-6">
@@ -137,6 +187,17 @@ export default function DataDocs() {
           list of FAQs. Chatbots can guide users through complex issues with
           step-by-step assistance that adapts to the flow of the conversation.
         </p>
+
+        <Dialog open={open} handler={handleOpen} size="lg">
+          <DialogBody>
+            <img src="./flow.png"></img>
+          </DialogBody>
+          <DialogFooter>
+            <Button variant="gradient" color="green" onClick={handleOpen}>
+              <span>Close</span>
+            </Button>
+          </DialogFooter>
+        </Dialog>
 
         <BubbleChat
           chatflowid="0595a837-39da-4f7c-8259-ef2172309c8c"
