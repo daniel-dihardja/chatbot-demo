@@ -84,11 +84,36 @@ export default function DataDocs() {
           <strong>Step-by-Step Breakdown</strong>
         </h2>
 
-        <p className="text-lg mb-12">
-          This chatbot is developed using the Flowise framework (link to
-          Flowise). Initially, the content from the text file is loaded and
-          splitted into chunks. These chunks are then converted into vectors and
-          stored in the database
+        <p className="text-lg mb-6">
+          This chatbot is developed using the&nbsp;
+          <a
+            href="https://flowiseai.com/"
+            target="_blank"
+            className="underline"
+          >
+            FlowiseAI&nbsp;
+          </a>
+          framework. FlowiseAI excels in providing efficient, AI-driven
+          solutions for dynamic conversational interfaces. Initially, the
+          content from the text file is loaded and splitted into chunks. These
+          chunks are then converted into vectors and stored in the database.
+        </p>
+        <p className="text-lg mb-6">
+          When a user submits a query, the chatbot converts this query into a
+          vector in the same way as the existing database entries. It then
+          performs a similarity search in the vector database to find the
+          vectors (entries) that are most similar to the query vector.
+        </p>
+
+        <p className="text-lg mb-6">
+          The vectors returned from the database are ranked based on their
+          similarity to the query vector. This ranking helps in identifying the
+          most relevant answers or information to the user’s question.
+        </p>
+
+        <p className="text-lg mb-6">
+          Finally, the selected information is formatted and delivered to the
+          user as an answer or response through the chat interface.
         </p>
 
         <h2 className="text-xl mb-6">
@@ -97,19 +122,6 @@ export default function DataDocs() {
         <p className="text-lg mb-6">
           Adding a chatbot to the traditional FAQ setup offers numerous benefits
           for customers, enhancing their overall experience in several key ways:
-        </p>
-
-        <p className="text-lg mb-6">
-          <strong>Instant Responses</strong>: Chatbots provide immediate answers
-          to customer queries, reducing wait times and improving satisfaction.
-          Unlike FAQs that require users to search for information,
-        </p>
-
-        <p className="text-lg mb-6">
-          <strong>24/7 Availability</strong>: Chatbots are available around the
-          clock, offering consistent support even when human representatives are
-          not. This ensures that help is always at hand, regardless of the time
-          or day.
         </p>
 
         <p className="text-lg mb-6">
