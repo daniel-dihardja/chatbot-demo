@@ -45,29 +45,29 @@ export default function DataDocs() {
   return (
     <>
       <Header />
-      <div className="container px-4 md:px-72 mx-auto mt-4">
-        <h1 className="text-2xl mb-4 text">
+      <div className="container px-4 md:px-72 mx-auto mt-12">
+        <h1 className="text-2xl mb-4">
           <strong>From Static to Dynamic: Extending FAQs with Chatbots</strong>
           {/* Demonstration of a Document-Based Chatbot with Fictional Data */}
         </h1>
-        <p className="text-lg mb-4">
+        <p className="text-lg mb-6">
           This demonstration showcases how chatbots are revolutionizing
-          business-customer interactions by extending traditional static FAQ
-          pages into dynamic, conversational experiences. Chatbots enhance the
-          utility of FAQs by providing real-time, interactive responses, making
-          information retrieval more engaging and efficient.
+          business-customer interactions by extending FAQ pages into dynamic,
+          conversational experiences. Chatbots enhance the utility of FAQs by
+          providing real-time, interactive responses, making information
+          retrieval more engaging and efficient.
         </p>
-        <p className="text-lg mb-12">
+        <p className="text-lg mb-6">
           In this example, we use fictional data to ensure it is not present in
           the GPT training dataset. The data is loaded from a text file. The bot
           is specifically programmed to use only this data; if additional
           information is required, it will direct users to the general inquiry
           email address.
         </p>
-        {/* <p>
+        <p className="text-lg mb-12">
           You can start interacting with the chatbot by clicking the button
           located in the bottom right corner of the page.
-        </p> */}
+        </p>
 
         <div
           className="p-4 border border-black rounded-lg mb-12"
@@ -111,7 +111,7 @@ export default function DataDocs() {
           most relevant answers or information to the user’s question.
         </p>
 
-        <p className="text-lg mb-6">
+        <p className="text-lg mb-12">
           Finally, the selected information is formatted and delivered to the
           user as an answer or response through the chat interface.
         </p>
@@ -120,8 +120,8 @@ export default function DataDocs() {
           <strong>Conclusion</strong>
         </h2>
         <p className="text-lg mb-6">
-          Adding a chatbot to the traditional FAQ setup offers numerous benefits
-          for customers, enhancing their overall experience in several key ways:
+          Adding a chatbot to an existing FAQ setup offers numerous benefits for
+          customers, enhancing their overall experience in several key ways:
         </p>
 
         <p className="text-lg mb-6">
@@ -131,7 +131,7 @@ export default function DataDocs() {
           relevant and effective.
         </p>
 
-        <p className="text-lg mb-6">
+        <p className="text-lg mb-12">
           <strong>Ease of Use:</strong> For many users, interacting with a
           chatbot can be easier and more intuitive than navigating through a
           list of FAQs. Chatbots can guide users through complex issues with
