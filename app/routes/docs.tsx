@@ -151,12 +151,22 @@ export default function DataDocs() {
           <strong>Integration</strong>
         </h2>
         <p className="text-lg mb-6">
-          To integrate a FlowiseAI-based chatbot, as demonstrated in this
-          example, into an existing website, start by hosting FlowiseAI on a
-          platform such as Hugging Face. Additionally, a database is required to
-          store the vectorized data derived from the documents. In this setup,
-          MongoDB Atlas is utilized as the database, ensuring efficient
-          management and storage of the vectorized data.
+          To integrate a FlowiseAI-based chatbot into an existing website, as
+          illustrated in this example, the process begins with hosting FlowiseAI
+          on a cloud service. In this instance, FlowiseAI is deployed on
+          HuggingFace.
+        </p>
+        <p className="text-lg mb-6">
+          Additionally, a database is required to store the vectorized data
+          derived from the documents. In this setup, MongoDB Atlas is utilized
+          as the database, which supports vector search capabilities.
+        </p>
+
+        <p className="text-lg mb-6">
+          An AI chat model is essential for this setup. Flowise supports
+          multiple options, including OpenAI, AzureOpenAI, and
+          GoogleGeminiGenerativeAI, among others. In this example, we utilize
+          the OpenAI API with the GPT-3.5 Turbo model as the chat engine.
         </p>
 
         <p className="text-lg mb-6">
@@ -202,7 +212,10 @@ export default function DataDocs() {
         <BubbleChat
           chatflowid="0595a837-39da-4f7c-8259-ef2172309c8c"
           apiHost="https://johngoyason-chatbot.hf.space"
-          theme={{ button: { backgroundColor: "#000" } }}
+          theme={{
+            button: { backgroundColor: "#000" },
+            chatWindow: { userMessage: { backgroundColor: "#000" } },
+          }}
         />
       </div>
     </>
