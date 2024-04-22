@@ -1,6 +1,5 @@
 import pkg from "@material-tailwind/react";
 import { BubbleChat } from "flowise-embed-react";
-import { useState } from "react";
 import { Header } from "~/components/Header";
 
 const { Card, CardBody, CardFooter, CardHeader, Typography } = pkg;
@@ -43,7 +42,6 @@ Phone: +123 4567 890
 `;
 
 export default function DataDocs() {
-  const [scaleOut, setScaleOut] = useState(false);
   return (
     <>
       <Header />
@@ -76,26 +74,6 @@ export default function DataDocs() {
           </CardBody>
         </Card>
 
-        {/* <p className="mb-2">
-        <small>eldoria-castle.txt</small>
-      </p> */}
-        {/* <textarea
-        className="w-full h-60 p-4 border border-gray-500 text-gray-900  bg-gray-50 text-sm mb-12"
-        value={txt}
-      ></textarea> */}
-        {/* <h2 className="text-2xl mb-2">The setup of the bot</h2>
-      <p className="flex place-content-center mb-4">
-        <img
-          src="/flow.png"
-          className={`${scaleOut ? "w-full" : "md:w-1/2"} cursor-pointer`}
-          onClick={() => setScaleOut(!scaleOut)}
-        ></img>
-      </p>
-      <p>
-        The bot is made with flowise, a chatbot platform that allows you to
-        create chatbots with a visual interface. It uses the langchain framework
-        as the underlying technology to process the data and generate responses.
-      </p> */}
         <BubbleChat
           chatflowid="0595a837-39da-4f7c-8259-ef2172309c8c"
           apiHost="https://johngoyason-chatbot.hf.space"

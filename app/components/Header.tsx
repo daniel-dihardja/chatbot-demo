@@ -1,8 +1,6 @@
-import React from "react";
 import pkg from "@material-tailwind/react";
-import { User } from "~/types";
-import ModelStatus from "./ModelStatus";
 import { useNavigate } from "@remix-run/react";
+import React from "react";
 const {
   Navbar,
   Menu,
