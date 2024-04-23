@@ -107,24 +107,23 @@ export default function DataDocs() {
             target="_blank"
             className="underline"
           >
-            FlowiseAI&nbsp;
+            FlowiseAI
           </a>
-          framework. FlowiseAI excels in providing efficient, AI-driven
-          solutions for dynamic conversational interfaces. Initially, the
-          content from the text file is loaded and splitted into chunks. These
-          chunks are then converted into vectors and stored in the database.
+          &nbsp;framework, which leverages LangChainJS—a TypeScript
+          implementation of LangChain originally developed in Python. FlowiseAI
+          excels in providing efficient, AI-driven solutions for dynamic
+          conversational interfaces.
+        </p>
+        <p className="text-lg mb-6">
+          Initially, the content from the text file is loaded and splitted into
+          chunks. These chunks are then converted into vectors and stored in the
+          database.
         </p>
         <p className="text-lg mb-6">
           When a user submits a query, the chatbot converts this query into a
           vector in the same way as the existing database entries. It then
           performs a similarity search in the vector database to find the
           vectors (entries) that are most similar to the query vector.
-        </p>
-
-        <p className="text-lg mb-6">
-          The vectors returned from the database are ranked based on their
-          similarity to the query vector. This ranking helps in identifying the
-          most relevant answers or information to the user’s question.
         </p>
 
         <p className="text-lg mb-6">
@@ -169,11 +168,40 @@ export default function DataDocs() {
           the OpenAI API with the GPT-3.5 Turbo model as the chat engine.
         </p>
 
-        <p className="text-lg mb-6">
+        <p className="text-lg mb-12">
           The chat widget can be seamlessly integrated into an existing website
           using various methods such as HTML embedding or script embedding. For
           React applications, the integration can be efficiently achieved using
           the BubbleChat component.
+        </p>
+
+        <h2 className="text-xl mb-6">
+          <strong>Cost</strong>
+        </h2>
+
+        <p className="text-lg mb-12">
+          Generally, there are fixed monthly costs associated with the cloud
+          service for the API and the database. Additionally, the cost of the AI
+          chat provider, such as OpenAI, varies based on the amount of usage.
+          The number of chatbots that can be configured with a single Flowise
+          instance is unlimited.
+        </p>
+
+        <h2 className="text-xl mb-6">
+          <strong>Exploring Advanced Functionalities</strong>
+        </h2>
+
+        <p className="text-lg mb-6">
+          In this example, a basic application of custom data in a chatbot is
+          demonstrated. Beyond simple interactions, the setup can be enhanced to
+          incorporate more advanced functionalities, such as triggering API
+          calls in response to user queries. With such enhancements, chatbots
+          are capable of performing external actions, like fetching data or
+          interacting with other systems in real-time, which are directly
+          influenced by the conversation flow and user inputs. These
+          capabilities, facilitated through the function call feature of the
+          chat models, enable seamless integration and dynamic responses within
+          the chatbot's operations.
         </p>
 
         <h2 className="text-xl mb-6">
@@ -198,7 +226,7 @@ export default function DataDocs() {
           step-by-step assistance that adapts to the flow of the conversation.
         </p>
 
-        <Dialog open={open} handler={handleOpen} size="lg">
+        <Dialog open={open} handler={handleOpen} size="xl">
           <DialogBody>
             <img src="./flow.png"></img>
           </DialogBody>
