@@ -62,7 +62,7 @@ export default function DataDocs() {
       <Header />
       <div className="container px-4 md:px-72 mx-auto mt-12">
         <h1 className="text-2xl mb-4">
-          <strong>Extending FAQs with Chatbots</strong>
+          <strong>Extending FAQs with Chatbot Integration</strong>
           {/* Demonstration of a Document-Based Chatbot with Fictional Data */}
         </h1>
         <p className="text-lg mb-6">
@@ -97,7 +97,7 @@ export default function DataDocs() {
         </div>
 
         <h2 className="text-xl mb-6">
-          <strong>Step-by-Step Breakdown</strong>
+          <strong>Chatbot Development Process Overview</strong>
         </h2>
 
         <p className="text-lg mb-6">
@@ -109,7 +109,7 @@ export default function DataDocs() {
           >
             FlowiseAI
           </a>
-          &nbsp;framework, which leverages LangChainJS—a TypeScript
+          &nbsp;framework, which leverages LangChain.js—a TypeScript
           implementation of LangChain originally developed in Python. FlowiseAI
           excels in providing efficient, AI-driven solutions for dynamic
           conversational interfaces.
@@ -147,7 +147,7 @@ export default function DataDocs() {
         </p>
 
         <h2 className="text-xl mb-6">
-          <strong>Integration</strong>
+          <strong>Website/App Integration Steps</strong>
         </h2>
         <p className="text-lg mb-6">
           To integrate a FlowiseAI-based chatbot into an existing website, as
@@ -176,7 +176,7 @@ export default function DataDocs() {
         </p>
 
         <h2 className="text-xl mb-6">
-          <strong>Cost</strong>
+          <strong>Understanding the Costs</strong>
         </h2>
 
         <p className="text-lg mb-12">
@@ -188,10 +188,10 @@ export default function DataDocs() {
         </p>
 
         <h2 className="text-xl mb-6">
-          <strong>Exploring Advanced Functionalities</strong>
+          <strong>Advanced Chatbot Features</strong>
         </h2>
 
-        <p className="text-lg mb-6">
+        <p className="text-lg mb-12">
           In this example, a basic application of custom data in a chatbot is
           demonstrated. Beyond simple interactions, the setup can be enhanced to
           incorporate more advanced functionalities, such as triggering API
@@ -205,7 +205,7 @@ export default function DataDocs() {
         </p>
 
         <h2 className="text-xl mb-6">
-          <strong>Conclusion</strong>
+          <strong>Enhancing Customer Interaction</strong>
         </h2>
         <p className="text-lg mb-6">
           Adding a chatbot to an existing FAQ setup offers numerous benefits for

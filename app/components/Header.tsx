@@ -38,7 +38,7 @@ export function Header() {
             onClick={() => navigate("/")}
             className="mr-4 cursor-pointer py-1.5 font-medium"
           >
-            <strong>Chatbots</strong>
+            <strong>Chatbot Support</strong>
           </Typography>
           <div className="hidden lg:block">{navList}</div>
           <IconButton
