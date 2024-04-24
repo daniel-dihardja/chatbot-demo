@@ -82,11 +82,12 @@ export default function DataDocs() {
         </p>
         <p className="text-lg mb-6">
           In this example, we use fictional data to ensure it is not present in
-          the GPT training dataset. The data is loaded from a text file. The bot
-          is specifically programmed to use only this data; if additional
-          information is required, it will direct users to the general inquiry
-          email address.
+          the GPT training dataset. The data is loaded from a text file. If the
+          bot cannot find directly relevant information to the user query, it is
+          instructed to seek the closest possible response and prompt the user
+          to confirm its relevance.
         </p>
+
         <p className="text-lg mb-12">
           You can begin interacting with the chatbot by clicking the button
           located in the bottom right corner of the page. Feel free to ask
