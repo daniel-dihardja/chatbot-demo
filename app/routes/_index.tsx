@@ -247,7 +247,7 @@ export default function DataDocs() {
         </Dialog>
 
         <BubbleChat
-          chatflowid="f3e15632-fdf9-4709-a1a9-5bdbaf7a52ab"
+          chatflowid="bb5d7303-fd10-47d0-9b9a-1d2c09774070"
           apiHost="https://johngoyason-chatbot.hf.space"
           theme={{
             button: { backgroundColor: "#000" },
