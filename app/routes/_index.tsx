@@ -247,7 +247,7 @@ export default function DataDocs() {
         </Dialog>
 
         <BubbleChat
-          chatflowid="3f1304f9-2886-4b12-b154-2b4fb631692b"
+          chatflowid="f138a28c-37e1-4fb3-9beb-e02f87827e4e"
           apiHost="https://flowise-sr2k.onrender.com"
           theme={{
             button: { backgroundColor: "#000" },
